@@ -1,2 +1,62 @@
+*
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    outline: none
+    border: none
+    text-transform: capitalize
+
+$crimson: crimson
+$black: #0d0d0d
+$light-bg: #1a1a1a
+$white: #fff
+$light-color: #aaa
+$box-shadow: 0.5rem 1rem rgba(0, 0, 0, .7)
+
+html
+    font-size: 62.5%
+    overflow-x: hidden
+
+    &::-webkit-scrollbar
+        width: 1rem
+    &::-webkit-scrollbar-track
+        background: $black
+    &::-webkit-scrollbar-thumb
+        background: $crimson
+        border-radius: 5rem
+
 body
-    background: pink
+    background: $black
+    padding-bottom: 6.5rem
+
+    .navbar
+        position: fixed
+        bottom: 0
+        right: 0
+        left: 0
+        display: flex
+        z-index: 1000
+        align-items: flex-end
+
+        a
+            padding: 2rem
+            font-size: 2rem
+            background: $light-bg
+            flex: 1
+            color: $white
+            text-align: center
+            transition: .2s linear
+
+            i
+                color: $crimson
+                padding-right: .5rem
+
+            &:hover
+                background: $crimson
+                padding-bottom: 4rem
+                border-radius: 1rem 1rem 0 0
+
+                i
+                    color: $white

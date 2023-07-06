@@ -10,15 +10,18 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
-<body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <a href="home.html"><i class="fa fa-home"></i><span>home</span></a>
-        <a href="about.html"><i class="fa fa-user"></i><span>about</span></a>
-        <a href="portfolio.html"><i class="fa fa-briefcase"></i><span>portfolio</span></a>
-        <a href="contact.html"><i class="fa fa-address-book"></i><span>contact</span></a>
-    </nav>
+<body onload="onLoadPage()">
+    <header>
+        <!-- NAVBAR -->
+        <div id="customNavbar"></div>
+    </header>
 </body>
 </html>
