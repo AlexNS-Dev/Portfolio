@@ -20,7 +20,7 @@ html::-webkit-scrollbar-track {
   background: #0d0d0d;
 }
 html::-webkit-scrollbar-thumb {
-  background: crimson;
+  background: #33ccb3;
   border-radius: 5rem;
 }
 
@@ -47,14 +47,36 @@ body .navbar a {
   transition: 0.2s linear;
 }
 body .navbar a i {
-  color: crimson;
+  color: #33ccb3;
   padding-right: 0.5rem;
 }
 body .navbar a:hover {
-  background: crimson;
+  background: #33ccb3;
   padding-bottom: 4rem;
   border-radius: 1rem 1rem 0 0;
 }
 body .navbar a:hover i {
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar a i {
+    padding: 0;
+  }
+  .navbar a span {
+    display: none;
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

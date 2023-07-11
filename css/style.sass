@@ -8,7 +8,7 @@
     border: none
     text-transform: capitalize
 
-$crimson: crimson
+$anemo: #33ccb3
 $black: #0d0d0d
 $light-bg: #1a1a1a
 $white: #fff
@@ -24,7 +24,7 @@ html
     &::-webkit-scrollbar-track
         background: $black
     &::-webkit-scrollbar-thumb
-        background: $crimson
+        background: $anemo
         border-radius: 5rem
 
 body
@@ -50,13 +50,34 @@ body
             transition: .2s linear
 
             i
-                color: $crimson
+                color: $anemo
                 padding-right: .5rem
 
             &:hover
-                background: $crimson
+                background: $anemo
                 padding-bottom: 4rem
                 border-radius: 1rem 1rem 0 0
 
                 i
                     color: $white
+
+// Media queries
+@media (max-width:1200px)
+    html
+        font-size: 55%
+
+@media (max-width:768px)
+    .navbar
+        a
+            i
+                padding: 0
+
+            span
+                display: none
+
+            &:hover
+                padding-bottom: 2rem
+
+@media (max-width:450px)
+    html
+        font-size: 50%

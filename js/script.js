@@ -1,15 +1,18 @@
 // Loads a file into an HTML element with a specific ID
 function loadHtml(id, url) {
-    $.ajax({
-        url: url,
-        method: "GET",
-        success: function(response) {
-            $("#" + id).html(response);
-        },
-        error: function() {
-            console.log("Error loading the following file: " + url)
-        }
-    });
+    fetch(url)
+        .then(function (response) {
+            if (!response.ok) {
+                throw new Error('Network response was not OK');
+            }
+            return response.text();
+        })
+        .then(function (html) {
+            document.getElementById(id).innerHTML = html;
+        })
+        .catch(function (error) {
+            console.error("Error loading the following file: " + url);
+        });
 }
 
 // Executes when page loads
