@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap')
+
 *
     font-family: 'Poppins', sans-serif
     margin: 0
@@ -31,52 +33,127 @@ body
     background: $black
     padding-bottom: 6.5rem
 
-    .navbar
-        position: fixed
-        bottom: 0
-        right: 0
-        left: 0
-        display: flex
-        z-index: 1000
-        align-items: flex-end
+.navbar
+    position: fixed
+    bottom: 0
+    right: 0
+    left: 0
+    display: flex
+    z-index: 1000
+    align-items: flex-end
 
-        a
-            padding: 2rem
-            font-size: 2rem
-            background: $light-bg
-            flex: 1
-            color: $white
-            text-align: center
-            transition: .2s linear
+    a
+        padding: 2rem
+        font-size: 2rem
+        background: $light-bg
+        flex: 1
+        color: $white
+        text-align: center
+        transition: .2s linear
+
+        i
+            color: $anemo
+            padding-right: .5rem
+
+        &:hover
+            background: $anemo
+            padding-bottom: 4rem
+            border-radius: 1rem 1rem 0 0
 
             i
-                color: $anemo
-                padding-right: .5rem
+                color: $white
 
-            &:hover
-                background: $anemo
-                padding-bottom: 4rem
-                border-radius: 1rem 1rem 0 0
+section
+    padding: 5rem 9%
 
-                i
-                    color: $white
+.btn
+    display: inline-block
+    margin-top: 1rem
+    border-radius: 5rem
+    background: $anemo
+    padding: .7rem
+    font-size: 1.7rem
+    color: $white
+    padding-left: 2rem
+
+    i
+        height: 4rem
+        width: 4rem
+        line-height: 4rem
+        font-size: 1.7rem
+        text-align: center
+        background: $white
+        color: $anemo
+        border-radius: 50%
+        margin-left: 1rem
+        transition: .2s linear
+    
+    &:hover i
+        margin-left: 2rem
+
+.home
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 4rem
+    min-height: calc( 100vh - 6.5rem )
+
+    .image
+        flex: 1 1 42rem
+        text-align: center
+        
+        img
+            height: 50rem
+            width: 50rem
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+        
+    .content
+        flex: 1 1 42rem
+
+        h3
+            color: $white
+            font-size: 4rem
+            padding-bottom: .5rem
+
+        span
+            font-size: 3rem
+            color: $anemo
+            padding: .5rem 0
+            display: block
+
+        p
+            font-size: 1.5rem
+            color: $light-color
+            padding: 1rem 0
+            line-height: 2
 
 // Media queries
 @media (max-width:1200px)
     html
         font-size: 55%
+    section
+        padding: 3rem 2rem
 
 @media (max-width:768px)
     .navbar
         a
             i
                 padding: 0
-
             span
                 display: none
-
             &:hover
                 padding-bottom: 2rem
+    .home
+        text-align: center
+        gap: 2rem
+        .image img
+            height: 30rem
+            width: 30rem
+        .content
+            h3
+                font-size: 3rem
+            span
+                font-size: 2.5rem
 
 @media (max-width:450px)
     html
