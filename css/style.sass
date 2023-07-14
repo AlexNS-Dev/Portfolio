@@ -15,7 +15,7 @@ $black: #0d0d0d
 $light-bg: #1a1a1a
 $white: #fff
 $light-color: #aaa
-$box-shadow: 0.5rem 1rem rgba(0, 0, 0, .7)
+$box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, .7)
 
 html
     font-size: 62.5%
@@ -65,6 +65,19 @@ body
 
 section
     padding: 5rem 9%
+    opacity: 0
+    animation: fade-in 0.5s ease-in forwards
+
+.heading
+    text-align: center
+    font-size: 5vw
+    color: $white
+    margin-bottom: 3rem
+    text-transform: uppercase
+
+    span
+        text-transform: uppercase
+        color: $anemo
 
 .btn
     display: inline-block
@@ -127,6 +140,65 @@ section
             padding: 1rem 0
             line-height: 2
 
+.about
+    .row
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 2rem
+
+        .info-container
+            flex: 1 1 42rem
+            
+            h1
+                font-size: 3rem
+                color: $white
+                text-transform: uppercase
+                padding-bottom: 1rem
+
+            .box-container
+                padding: 1rem 0
+                display: flex
+                flex-wrap: wrap
+                gap: 2rem
+
+                .box
+                    flex: 1 1 20rem
+                    
+                    h3
+                        font-size: 1.7rem
+                        color: $white
+                        padding: 1rem 0
+                        font-weight: normal
+
+                        span
+                            color: $light-color
+                            font-weight: light
+
+                    .email
+                        text-transform: lowercase
+
+        .count-container
+            flex: 1 1 42rem
+            display: flex
+            flex-wrap: wrap
+            gap: 2rem
+
+            .box
+                flex: 1 1 20rem
+                padding: 3rem 4rem
+                border-radius: .5rem
+                background: $light-bg
+                box-shadow: $box-shadow
+                
+                h3
+                    font-size: 5rem
+                    color: $anemo
+                
+                p
+                    font-size: 2rem
+                    color: $light-color
+
 // Media queries
 @media (max-width:1200px)
     html
@@ -135,6 +207,10 @@ section
         padding: 3rem 2rem
 
 @media (max-width:768px)
+
+    .heading
+        font-size: 12vw
+
     .navbar
         a
             i
@@ -158,3 +234,10 @@ section
 @media (max-width:450px)
     html
         font-size: 50%
+
+// Keyframes
+@keyframes fade-in
+    0%
+        opacity: 0
+    100%
+        opacity: 1
