@@ -16,6 +16,24 @@
     <!-- JQUERY CDN -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
+    <style>
+
+        .languages {
+            display: flex;
+            background-color: white;
+        }
+        .languages button {
+            background: none;
+            cursor: pointer;
+            margin: 0 .5rem;
+        }
+
+        .languages > * {
+            font-size: 2rem;
+        }
+
+    </style>
+
 </head>
 
 <body onload="onLoadPage()">
@@ -23,6 +41,12 @@
         <!-- NAVBAR -->
         <div id="customNavbar"></div>
     </header>
+
+    <div class="languages">
+        <button id="englishBtn">EN</button>
+        <p>|</p>
+        <button id="spanishBtn">ES</button>
+    </div>
 
     <section class="about">
 
@@ -45,9 +69,9 @@
 
                     <div class="box">
                         <h3> <span>availability : </span> currently working </h3>
-                        <h3> <span>skill : </span> full-stack developer </h3>
+                        <h3> <span>skills : </span> full-stack developer </h3>
                         <h3> <span>experience : </span> 1+ years </h3>
-                        <h3> <span>language : </span> spanish, catalan, english </h3>
+                        <h3> <span>languages : </span> spanish, catalan, english </h3>
                     </div>
 
                 </div>
@@ -64,8 +88,8 @@
                 </div>
 
                 <div class="box">
-                    <h3>450</h3>
-                    <p>happy clients</p>
+                    <h3>3500+</h3>
+                    <p>hours of self learning</p>
                 </div>
 
                 <div class="box">
@@ -74,8 +98,8 @@
                 </div>
 
                 <div class="box">
-                    <h3>3</h3>
-                    <p>awards won</p>
+                    <h3>robotics</h3>
+                    <p>specialization - universal robots</p>
                 </div>
 
             </div>

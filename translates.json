@@ -1,0 +1,75 @@
+{
+    "es": {
+        "navbar":{
+            "home": "inicio",
+            "about": "sobre mi",
+            "portfolio": "proyectos",
+            "contact": "contacto"
+        },
+        "heading": {
+            "leftSide": "sobre ",
+            "rightSide": "mi"
+        },
+        "personalInfo": {
+            "title": "información personal",
+            "nameTag": "nombre : ",
+            "ageTag": "edad : ",
+            "emailTag": "correo : ",
+            "fromTag": "de : ",
+            "fromValue": "españa, barcelona",
+            "availabilityTag": "disponibilidad : ",
+            "availabilityValue": "actualmente trabajando",
+            "skillsTag": "habilidades : ",
+            "skillsValue": "desarrollador full-stack",
+            "experienceTag": "experiencia : ",
+            "experienceValue": "1+ años",
+            "languagesTag": "idiomas : ",
+            "languagesValue": "español, catalán, inglés",
+            "downloadCV": "descargar CV"
+        },
+        "countContainer": {
+            "box1": "años de experiencia",
+            "box2": "horas de autoaprendizaje",
+            "box3": "proyectos completados",
+            "box4Title": "robotica",
+            "box4": "especialización - universal robots"
+        }
+    },
+
+    "en": {
+        "navbar":{
+            "home": "home",
+            "about": "about",
+            "portfolio": "portfolio",
+            "contact": "contact"
+        },
+        "heading": {
+            "leftSide": "about ",
+            "rightSide": "me"
+        },
+        "personalInfo": {
+            "title": "personal info",
+            "nameTag": "name : ",
+            "ageTag": "age : ",
+            "emailTag": "email : ",
+            "fromTag": "from : ",
+            "fromValue": "spain, barcelona",
+            "availabilityTag": "availability : ",
+            "availabilityValue": "currently working",
+            "skillsTag": "skills : ",
+            "skillsValue": "full-stack developer",
+            "experienceTag": "experience : ",
+            "experienceValue": "1+ years",
+            "languagesTag": "languages : ",
+            "languagesValue": "spanish, catalan, english",
+            "downloadCV": "download CV"
+        },
+        "countContainer": {
+            "box1": "years of experience",
+            "box2": "hours of self-learning",
+            "box3": "projects completed",
+            "box4Title": "robotics",
+            "box4": "specialization - universal robots"
+        }
+    }
+}
