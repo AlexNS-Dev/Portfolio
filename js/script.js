@@ -53,7 +53,12 @@ fetch('translates.json')
             document.querySelector('.info-container .box-container .box:nth-child(2) h3:nth-child(3)').childNodes[2].textContent = translates.personalInfo.experienceValue;
             document.querySelector('.info-container .box-container .box:nth-child(2) h3:nth-child(4)').childNodes[1].textContent = translates.personalInfo.languagesTag;
             document.querySelector('.info-container .box-container .box:nth-child(2) h3:nth-child(4)').childNodes[2].textContent = translates.personalInfo.languagesValue;
-
+            // Count container
+            document.querySelector('.count-container .box:nth-child(1) p').textContent = translates.countContainer.box1;
+            document.querySelector('.count-container .box:nth-child(2) p').textContent = translates.countContainer.box2;
+            document.querySelector('.count-container .box:nth-child(3) p').textContent = translates.countContainer.box3;
+            document.querySelector('.count-container .box:nth-child(4) h3').textContent = translates.countContainer.box4Title;
+            document.querySelector('.count-container .box:nth-child(4) p').textContent = translates.countContainer.box4;
         }
 
         // Changes languages depending on the button clicked
